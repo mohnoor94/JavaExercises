@@ -1,4 +1,5 @@
 public class TreeAgain {
+
     public static void main(String[] args) {
         Node root = new Node(10);
         root.insert(20);
@@ -43,6 +44,7 @@ public class TreeAgain {
     }
 
     static class Node {
+
         int data;
         Node left, right;
 

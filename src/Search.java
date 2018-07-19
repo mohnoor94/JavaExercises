@@ -39,8 +39,7 @@ public class Search {
      * Speed O(n)
      */
     private static boolean linearSearch(int[] array, int goal) {
-        for (int i : array)
-            if (goal == i) return true;
+        for (int i : array) if (goal == i) return true;
         return false;
     }
 

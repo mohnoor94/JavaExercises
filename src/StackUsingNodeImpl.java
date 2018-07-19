@@ -42,7 +42,7 @@ public class StackUsingNodeImpl {
         }
 
         int peek() {
-            if (isEmpty()) throw new RuntimeException("Queue is empty");
+            if (isEmpty()) throw new RuntimeException("Stack is empty");
             return top.data;
         }
 
@@ -53,7 +53,7 @@ public class StackUsingNodeImpl {
         }
 
         int pop() {
-            if (isEmpty()) throw new RuntimeException("Queue is empty");
+            if (isEmpty()) throw new RuntimeException("Stack is empty");
             int data = top.data;
             top = top.next;
             return data;

@@ -1,3 +1,5 @@
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 import java.util.Arrays;
 
 public class Sort {
@@ -10,14 +12,13 @@ public class Sort {
         mergeSort(array);
         System.out.println(Arrays.toString(array));
 
-        // quickSort is not completed yet...
-
         array = initializeArray();
         quickSort(array);
         System.out.println(Arrays.toString(array));
     }
 
     /**
+     * TODO: Implement me!
      * Speed --> O(n log(n))
      * Space --> 0 [can be done in place]
      *
@@ -25,17 +26,15 @@ public class Sort {
      * --> worst case O(n^2)
      */
     private static void quickSort(int[] array) {
-        quickSort(array, 0, array.length-1);
+        throw new NotImplementedException();
     }
 
-    private static void quickSort(int[] array, int i, int i1) {
-    }
 
     /**
      * Speed --> O(n log(n))
      * Space --> O(n)
      */
-    private static void mergeSort(int[] array) {
+    public static void mergeSort(int[] array) {
         mergeSort(array, new int[array.length], 0, array.length - 1);
     }
 

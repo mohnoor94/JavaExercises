@@ -1,9 +1,7 @@
 import java.util.Arrays;
-import java.util.PriorityQueue;
 
 public class MinIntHeap {
-
-    PriorityQueue<Integer> x = new PriorityQueue<>();
+    
     private int capacity = 10;
     private int size = 0;
 

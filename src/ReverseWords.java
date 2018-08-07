@@ -1,13 +1,13 @@
 public class ReverseWords {
 
     public static void main(String[] args) {
-        String sentence = "Hello my                 world!";
+        String sentence = "    Hello my                 world!  ";
 
         System.out.println(reverseWords(sentence));
     }
 
     private static String reverseWords(String sentence) {
-        String[] words = sentence.split("\\s+");
+        String[] words = sentence.trim().split("\\s+");
         StringBuilder reversedWords = new StringBuilder();
         for (String word : words) {
             int wordSize = word.length();

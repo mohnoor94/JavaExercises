@@ -1,4 +1,3 @@
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.Arrays;
 
@@ -26,7 +25,7 @@ public class Sort {
      * --> worst case O(n^2)
      */
     private static void quickSort(int[] array) {
-        throw new NotImplementedException();
+        throw new RuntimeException("Not implemented yet!");
     }
 
 
